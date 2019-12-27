@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Operating System.cbp" />
+		<Unit filename="scheduling.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
