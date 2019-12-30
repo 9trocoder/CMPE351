@@ -151,9 +151,9 @@ void sm(struct node* header) {
 }
 
 void fcfs(struct node* header) {
-	int waittime = 0, counter = 0;
-	int pr = 1;
+	int waittime = 0;
 	float average = 0;
+	int pr;
 	struct node *temp = header;
 	ofstream fin("output.txt");
 	fin <<"Scheuling Method: First Come First Served " << endl;
@@ -173,7 +173,7 @@ void sjfnp(struct node* header) {
 
 	struct node *temp = header;
 
-	int btm, wtm = 0, counter = 0;
+	int wtm = 0, counter = 0;
 	int pr = 1;
 	float average = 0;
 	temp = sort_list(temp);
@@ -213,7 +213,7 @@ void pnp(struct node* header) {
 
 	struct node *temp = header;
 
-	int btm, wtm = 0, counter = 0;
+	int wtm = 0, counter = 0;
 	int pr = 1;
 	float average = 0;
 	temp = sort_priority(temp);
